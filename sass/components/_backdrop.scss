@@ -9,7 +9,3 @@
     transition-duration: var(--main-duration);
     transition-timing-function: var(--main-cubic);
 }
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
-}

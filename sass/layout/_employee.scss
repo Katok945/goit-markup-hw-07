@@ -4,17 +4,14 @@
 }
 
 .employee__top-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19);
     text-align: center;
     margin-bottom: 10px;
 }
 
 .employee__text {
     margin-bottom: var(--typical-mrg);
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(null, 16px, 1.19);
     text-align: center;
     color: var(--main-text-color);
     margin-bottom: 16px;
@@ -49,12 +46,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.employee__soc-link:hover,
-.employee__soc-link:focus {
-    background-color: var(--third-background-color);
-    color: #FFFFFF;
+    &:hover,
+    &:focus {
+        background-color: var(--third-background-color);
+        color: #FFFFFF;
+    }
 }
 
 .employee__soc-icon {

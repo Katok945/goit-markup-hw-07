@@ -17,9 +17,7 @@
 .hero__title {
     width: 696px;
     margin: 0 auto;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(900, 44px, 1.36);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: var(--typical-mrg);
@@ -32,9 +30,7 @@
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 136;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(700, 16px, 1.88);
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--white-text-color);

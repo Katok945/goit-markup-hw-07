@@ -34,11 +34,11 @@
     transition-property: background-color;
     transition-duration: var(--main-duration);
     transition-timing-function: var(--main-cubic);
-}
 
-.footer__geo:hover,
-.footer__geo:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer__link {
@@ -49,11 +49,11 @@
     transition-property: background-color;
     transition-duration: var(--main-duration);
     transition-timing-function: var(--main-cubic);
-}
 
-.footer__link:hover,
-.footer__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer__soc {
@@ -62,9 +62,7 @@
 
 .footer__soc-text {
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(700, 14px, 1.14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-text-color);
@@ -87,15 +85,15 @@
     transition-property: background-color;
     transition-duration: var(--main-duration);
     transition-timing-function: var(--main-cubic);
-}
 
-.footer__soc-item:not(:last-child) {
-    margin-right: 10px;
-}
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 
-.footer__soc-item:hover,
-.footer__soc-item:focus {
-    background-color: var(--third-background-color);
+    &:hover,
+    &:focus {
+        background-color: var(--third-background-color);
+    }
 }
 
 .footer__soc-link {

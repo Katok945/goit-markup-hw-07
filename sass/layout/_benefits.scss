@@ -16,13 +16,10 @@
     margin-bottom: var(--typical-mrg);
     border-radius: 4px;
     background-color: #F5F4FA;
-
 }
 
 .benefits__top-text {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1.14;
+    @include font(700, 13px, 1.14);
     text-transform: uppercase;
     margin-bottom: 10px;
 }
